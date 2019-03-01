@@ -1,0 +1,20 @@
+{
+  "rules": {
+    "eqeqeq": "off",
+    "quotes": ["warn", "double"],
+    "curly": ["warn", "multi"],
+    "no-floating-promises": 0,
+    "return-await": 0
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "ecmaFeatures": {
+    "modules": 1
+  },
+  "env": {
+    "es6": 1
+  }
+}
