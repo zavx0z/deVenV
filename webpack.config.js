@@ -4,10 +4,10 @@ const ComponentDirectoryPlugin = require("component-directory-webpack-plugin")
 
 module.exports = {
     entry: {
-        main: "../src/js/main.js",
+        main: "./src/js/main.js",
     },
     output: {
-        path: path.resolve(__dirname, "../dist"),
+        path: path.resolve(__dirname, "dist"),
         filename: "./js/main.js"
     },
     resolve: {
@@ -29,12 +29,12 @@ module.exports = {
     plugins: [
         new CopyWebpackPlugin([
             {
-                from: "../src/index.html",
-                to: "../dist/index.html"
+                from: "./src/index.html",
+                to: "./index.html"
             },
             {
-                from: "./faviconJS.png",
-                to: "../dist/faviconJS.png"
+                from: "./deVenV/faviconJS.png",
+                to: "./faviconJS.png"
             },
         ]),
     ]
